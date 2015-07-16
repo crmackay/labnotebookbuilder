@@ -1,0 +1,36 @@
+ideas:
+
+func dirHandler (dir){
+    fir i, nextFile := range foundFiles {
+        fileHandler(nextFile)
+    }
+    for i, nextDir := range foundDirs {
+        dirHandler(nextDir)
+    }
+}
+
+func fileHandler (file) {
+
+    }
+
+
+type fileType interface {
+
+}
+
+
+type fileTypeHandler func(file) file
+
+mdFileHandler := func(file){
+    return newFile
+}
+
+svg
+
+
+tileTypeHandlers := map[string]fileTypeHandler{
+    "md": mdFileHandler,
+    "img": imgFileHandler,
+    "svg": svgFileHandler
+    "html": htmlFileHandler,
+}
