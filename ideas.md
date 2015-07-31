@@ -1,5 +1,6 @@
 ideas:
 
+```go
 
 // recursive walking function
 // maybe: but found items into a channel? for a different htmlFileHandler
@@ -44,14 +45,15 @@ file fldrContents struct {
     dirs []directory
 }
 
+```
 
 workflow:
 
-scan directory -->
-put found things into channel -->
-parse each object via specific handler --> 
-put objects into a map (map["absolutepath"]fldrContents) -->
-parse each folder contents -->
-create html -->
-put into channel -->
-write to file, overwriting whats there
+- scan directory -->
+- put found things into channel -->
+- parse each object via specific handler --> 
+- put objects into a map (map["absolutepath"]fldrContents) -->
+- parse each folder contents -->
+- create html -->
+- put into channel -->
+- write to file, overwriting whats there
